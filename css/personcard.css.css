@@ -1,0 +1,346 @@
+.personcard{
+  display: flex;
+  width: 100%;
+  height: 16%;
+}
+
+.personalcard {
+  /*width: 45%;*/
+  aspect-ratio: 1/1;
+  display: flex;
+  background: #ede5fb;
+  border-radius: 32px;
+  position: relative;
+  box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
+  transition: all 0.5s ease-in-out;
+}
+
+.personalcard .profile-pic {
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  top: 3px;
+  left: 3px;
+  border-radius: 29px;
+  z-index: 1;
+  border: 0 solid #fbb9b6;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+}
+
+/*.personalcard .profile-pic img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: 0 0;
+  object-position: 0 0;
+  transition: all 0.5s ease-in-out 0s;
+}*/
+
+.personalcard .bottom {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  top: 80%;
+  border-radius: 0 0 29px 29px;
+  z-index: 2;
+  box-shadow: 1px 1px 1px #ffffff, -3px -3px 5px #ffffff;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+   background: rgba(203, 207, 252, 0.5);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(203, 207, 252, 0.5);
+}
+/*.bottom:hover .div1{
+  display: none;
+}*/
+
+.personalcard .bottom .content {
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 160px;
+}
+
+.personalcard .bottom .content .about-me {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #cb8fe9;
+ /* margin-top: 98px;*/
+}
+.myname{
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+
+
+/*.personalcard:hover {
+  border-top-left-radius: 55px;
+}*/
+
+.personalcard:hover .bottom {
+  top: 30%;
+  border-radius: 10px 10px 29px 29px;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.personalcard:hover .profile-pic {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1;
+  top: 10px;
+  left: 21%;
+  border-radius: 50%;
+  z-index: 3;
+  border: 4px solid #ffffff;
+  box-shadow: 3px 3px 3px #CBCFFC, -3px -3px 5px #FFF;
+  transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+}
+
+.personalcard:hover .profile-pic:hover {
+
+  transform: scale(1.3);
+  border-radius: 0;
+}
+
+.love1 {
+    position: absolute;
+    right: 1.4rem;
+    top: 5px;
+}
+.lov1 {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://i.postimg.cc/hvnZQWjd/love.png");
+  background-size: cover;
+  animation: heartbeat 3s infinite;
+}
+
+.profilecard{
+    width: 55%;
+    margin-left: 15px;
+}
+.pficard{
+  display: flex;
+  justify-content: space-between;
+}
+.address{
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  align-items: center;
+  height: 30px;
+  border-radius: 10px;
+  background: #ede5fb;
+    box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
+  place-items: center;
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.address:hover {
+  box-shadow: inset 4px 4px 6px -1px rgb(203, 207, 252),
+	      inset -4px -4px 6px -1px rgb(203, 207, 252),
+	      -0.5px -0.5px 0 rgba(255,255,255,1),
+	      0.5px 0.5px 0 rgb(255, 255, 255),
+	      0 12px 10px -10px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(5px);
+}
+.pfiimg{
+  height: 15px;
+  margin-left: 1px;
+}
+.pfibimg{
+  height: 17px;
+}
+.pfitext{
+  font-size: 12px;
+  margin-left: 2px;
+}
+.btd1{
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  align-items: center;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 10px;
+  background: #ede5fb;
+    box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
+  place-items: center;
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btd1:hover {
+  box-shadow: inset 4px 4px 6px -1px rgb(203, 207, 252),
+	      inset -4px -4px 6px -1px rgb(203, 207, 252),
+	      -0.5px -0.5px 0 rgba(255,255,255,1),
+	      0.5px 0.5px 0 rgb(255, 255, 255),
+	      0 12px 10px -10px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(5px);
+}
+.btd1 img{
+  margin-left: -5px;
+  height: 15px;
+}
+.btd2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  align-items: center;
+  height: 30px;
+  border-radius: 10px;
+  background: #ede5fb;
+    box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
+  place-items: center;
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btd2:hover {
+  box-shadow: inset 4px 4px 6px -1px rgb(203, 207, 252),
+	      inset -4px -4px 6px -1px rgb(203, 207, 252),
+	      -0.5px -0.5px 0 rgba(255,255,255,1),
+	      0.5px 0.5px 0 rgb(255, 255, 255),
+	      0 12px 10px -10px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(5px);
+}
+.btd2 span{
+  margin-left: 5px;
+}
+
+.example-2 {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.example-2 .icon-content {
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: -40px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background: #ede5fbff;
+  box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0 rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.example-2 .icon-content a[data-social="spotify"] .filled,
+.example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
+  background-color: rgb(199, 185, 255);
+}
+.example-2 .icon-content a[data-social="pinterest"] .filled,
+.example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
+  background-color: rgb(255, 181, 236);
+}
+.example-2 .icon-content a[data-social="dribbble"] .filled,
+.example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
+  background-color: rgb(181, 255, 213);
+}
+.example-2 .icon-content a[data-social="telegram"] .filled,
+.example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
+  background-color: #a2c6ff;
+}
+.copywriter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 7px 0 7px 0;
+  border-radius: 1rem;
+  background: #ede5fb;
+  box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
+  place-items: center;
+  transition: transform 0.5s;
+}
+.copywriter:hover{
+  box-shadow: inset 4px 4px 6px -1px rgb(203, 207, 252),
+	      inset -4px -4px 6px -1px rgb(203, 207, 252),
+	      -0.5px -0.5px 0 rgba(255,255,255,1),
+	      0.5px 0.5px 0 rgb(255, 255, 255),
+	      0 12px 10px -10px rgba(255, 255, 255, 0.05);
+  border: 0 solid rgba(255, 255, 255, 0.1);
+  transform: translateY(5px);
+  place-items: center;
+  transition: transform 0.5s;
+}
+.copywriter img{
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.copywriter .cop1{
+  font-size: 14px;
+  margin-left: 8px;
+  margin-right: 8px;
+}

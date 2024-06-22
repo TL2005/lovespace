@@ -7,6 +7,7 @@
     <link href="css/index.css" rel="stylesheet">
     <link href="css/timing.css" rel="stylesheet">
     <link href="techstack/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/personcard.css.css" rel="stylesheet">
     <script src="techstack/bootstrap/js/bootstrap.min.js"></script>
     <script src="techstack/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
@@ -95,23 +96,39 @@
             </a>
         </div>
     </div>
-    <div class="container my-3">
+    <!--<div class="container mt-3">
         <div class="card card1">
-            <!-- 头像容器 -->
-            <div class="avatar-container m-2">
-                <div class="avatar-card card " style="border-radius: 50%">
+            &lt;!&ndash; 头像容器 &ndash;&gt;
+            <div class="avatar-container">
+                <div class="avatar-card card ">
                     <img src="https://i.postimg.cc/cHypzzpv/tl.jpg" alt="头像">
+                    <div class="text-center frosted-glass">陶磊</div>
                 </div>
-                <div class="text-center my-1 frosted-glass">陶磊</div>
+
             </div>
-            <!-- 卡片内容 -->
+            &lt;!&ndash; 卡片内容 &ndash;&gt;
+        </div>
+    </div>-->
+
+    <div class="container mt-3 personcard">
+        <div class="personalcard card avatar-container">
+
+            <div class="profile-pic card">
+                <img class="img1" src="https://i.postimg.cc/cHypzzpv/tl.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <div class="d1"><div class="text-center mt-1 div1">陶磊</div></div>
+                <div class="text-center mt-5 div2">赵景秀的宝宝</div>
+            </div>
+
         </div>
     </div>
+
+
+
 </div>
 </body>
 </html>
-
-
     <style>
         .frosted-glass {
             background: rgba(255, 255, 255, 0.3); /* 半透明白色背景 */
@@ -138,7 +155,8 @@
             object-fit: cover;
         }
         .avatar-container {
-            width: 140px; /* 初始宽度 */
+            width: 180px;
+            height: 180px/* 初始宽度 */
         }
     </style>
 

@@ -32,6 +32,14 @@
     background-size: cover;
     animation: heartbeat 3s infinite;
 }
+.heart1 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://i.postimg.cc/hvnZQWjd/love.png");
+    background-size: cover;
+    animation: heartbeat 3s infinite;
+}
 @keyframes heartbeat {
     0% {
         transform: scale(1);
