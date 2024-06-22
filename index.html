@@ -9,6 +9,8 @@
     <link href="techstack/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="techstack/bootstrap/js/bootstrap.min.js"></script>
     <script src="techstack/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="js/timing.js"></script>
 </head>
 <style>
@@ -17,18 +19,48 @@
         background: #ede5fb;
         box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
         box-sizing: border-box;
+        border: none;
         border-radius: 1rem;
     }
     .t1{
         margin-left: 1rem;
         margin-right: 50px;
     }
+    .btn-with-icon {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 150px; /* 设置按钮的固定宽度 */
+        justify-content: center; /* 使内容居中 */
+        position: relative;
+        overflow: hidden;
+    }
+    .btn-with-icon img {
+        margin-right: 8px;
+        transition: transform 0.3s;
+        position: relative;
+        z-index: 1;
+    }
+    .bookmarkBtn {
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.349);
+        background-color: rgb(237, 229, 251);
+        box-shadow: 5px 5px 5px #CBCFFC, -3px -3px 5px #FFF;
+    }
+    .btn-with-icon:hover img {
+        transform: translateX(150%);
+    }
+
+    .btn-with-icon:hover .text-nowrap {
+        visibility: hidden;
+    }
+
 
 </style>
 <body>
 <div class="container pt-2 body-box">
     <h2 class="text-center text-nowrap">我们的恋爱空间</h2>
-    <div class="container mt-2">
+    <div class="container pt-2">
         <div class="card">
             <div class="card-body d-flex justify-content-between align-items-center">
                 <!-- 第一个盒子: 图标 -->
@@ -43,7 +75,28 @@
             </div>
         </div>
     </div>
+    <div class="container pt-3">
+        <div class="d-flex justify-content-between">
+            <a href="#" class="btn bookmarkBtn btn-with-icon">
+                <div class="d-flex align-items-center">
+                    <img src="https://i.postimg.cc/vDF603W5/photowall.png" alt="Photowall Icon" width="20" height="20">
+                    <span class="text-nowrap ml-2">照片墙</span>
+                </div>
+            </a>
+            <a href="#" class="btn bookmarkBtn btn-with-icon mx-3">
+                <div class="d-flex align-items-center IconContainer">
+                    <img src="https://i.postimg.cc/BnBt9xWc/lovediary.png" alt="Love Diary Icon" width="25" height="25">
+                    <span class="text-nowrap ml-2">恋爱日记</span>
+                </div>
+            </a>
+            <a href="#" class="btn bookmarkBtn btn-with-icon">
+                <div class="d-flex align-items-center">
+                    <img src="https://i.postimg.cc/2S9ySC6V/secret.png" alt="Secret Icon" width="25" height="25">
+                    <span class="text-nowrap ml-2">秘密</span>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
 </body>
 </html>
-
