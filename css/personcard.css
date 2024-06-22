@@ -17,9 +17,8 @@
 
 .profile-pic {
   position: absolute;
-  width: calc(100% - 6px);
+  width: calc(100%);
   height: calc(100% - 6px);
-
   border-radius: 29px;
   z-index: 1;
   border: 0 solid #fbb9b6;
