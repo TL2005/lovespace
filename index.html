@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>我们的恋爱空间</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/timing.css" rel="stylesheet">
@@ -14,6 +14,9 @@
     <script src="js/timing.js"></script>
 </head>
 <style>
+    .body-box{
+        max-width: 460px;
+    }
     .card{
         margin: 0 auto;
         background: #ede5fb;
@@ -23,8 +26,9 @@
         border-radius: 1rem;
     }
     .t1{
-        margin-left: 1rem;
-        margin-right: 50px;
+        letter-spacing: 2px;
+        font-size: 17px;
+        font-weight: 500;
     }
     .btn-with-icon {
         display: flex;
@@ -50,32 +54,26 @@
     .btn-with-icon:hover img {
         transform: translateX(150%);
     }
-
-    .btn-with-icon:hover .text-nowrap {
+    .btn-with-icon:hover .text-nowrap{
         visibility: hidden;
     }
-
-
 </style>
 <body>
 <div class="container pt-2 body-box">
-    <h2 class="text-center text-nowrap">我们的恋爱空间</h2>
-    <div class="container pt-2">
-        <div class="card">
+    <h1 class="text-center text-nowrap" style="letter-spacing: 5px">我们的恋爱空间</h1>
+    <div class="container my-3">
+        <div class="card" >
             <div class="card-body d-flex justify-content-between align-items-center">
-                <!-- 第一个盒子: 图标 -->
                 <div class="icon"></div>
-                <!-- 第二个盒子: 文本内容 -->
                 <div class="t1 text-nowrap">
                     <div>我们在一起：</div>
                     <div id="time1"></div>
                 </div>
-                <!-- 第三个盒子: 跳动的爱心 -->
                 <div class="heart"></div>
             </div>
         </div>
     </div>
-    <div class="container pt-3">
+    <div class="container">
         <div class="d-flex justify-content-between">
             <a href="#" class="btn bookmarkBtn btn-with-icon">
                 <div class="d-flex align-items-center">
@@ -91,8 +89,8 @@
             </a>
             <a href="#" class="btn bookmarkBtn btn-with-icon">
                 <div class="d-flex align-items-center">
-                    <img src="https://i.postimg.cc/2S9ySC6V/secret.png" alt="Secret Icon" width="25" height="25">
-                    <span class="text-nowrap ml-2">秘密</span>
+                    <img src="https://i.postimg.cc/2S9ySC6V/secret.png" alt="Secret Icon" width="25" height="25" id="img1">
+                    <span class="text-nowrap ml-2" style="letter-spacing: 1rem">秘密</span>
                 </div>
             </a>
         </div>
