@@ -132,7 +132,7 @@
 .address{
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 160px;
   align-items: center;
   height: 30px;
   border-radius: 10px;
@@ -154,7 +154,6 @@
 }
 .pfiimg{
   height: 15px;
-  margin-left: 1px;
 }
 .pfibimg{
   height: 17px;

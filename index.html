@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="js/timing.js"></script>
+    <script src="js/profilecard.js"></script>
 </head>
 <style>
     .body-box{
@@ -40,12 +41,24 @@
         position: relative;
         overflow: hidden;
     }
+
     .btn-with-icon img {
         margin-right: 8px;
         transition: transform 0.3s;
         position: relative;
         z-index: 1;
     }
+
+    .btn-with-icon1 {
+        display: flex;
+        align-items: center;
+        height: 35px;
+        width: 100px; /* 设置按钮的固定宽度 */
+        justify-content: center; /* 使内容居中 */
+        position: relative;
+        overflow: hidden;
+    }
+
     .bookmarkBtn {
         border-radius: 1rem;
         border: 1px solid rgba(255, 255, 255, 0.349);
@@ -117,11 +130,21 @@
                 <img class="img1" src="https://i.postimg.cc/cHypzzpv/tl.jpg" alt="">
             </div>
             <div class="bottom">
-
                 <div class="d1"><div class="text-center mt-1 div1">陶磊</div></div>
                 <div class="text-center div2" style="margin-top: 2.5rem">赵景秀的宝宝</div>
             </div>
         </div>
+
+        <!--<div class="pficard ms-3 ">
+            <div class="address">
+                <img src="https://i.postimg.cc/T1LcH3rK/address.png" alt="" class="pfiimg">
+                <p class="pfitext text-nowrap">云南&nbsp;·&nbsp;文山</p>
+            </div>
+            <div class="info btd1">
+                <img src="https://i.postimg.cc/BnYqKbRK/man.png" alt="" class="pfiimg"/>
+                <span class="pfitext" id="age1"></span>岁&nbsp;·&nbsp;<span id="zodiac1"></span>
+            </div>
+        </div>-->
     </div>
 
 
